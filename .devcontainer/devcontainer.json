@@ -1,0 +1,17 @@
+{
+  "name": "Android Development",
+  "image": "mcr.microsoft.com/devcontainers/java:11",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {},
+    "ghcr.io/devcontainers/features/gradle:1": {}
+  },
+  "postCreateCommand": "chmod +x gradlew && ./gradlew --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-vscode.vscode-gradle"
+      ]
+    }
+  }
+}

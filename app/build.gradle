@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application' version '8.0.2'
+    id 'com.android.application' version '8.1.4'
 }
 
 android {
@@ -20,7 +20,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.debug
+        }
+        debug {
+            debuggable true
         }
     }
     compileOptions {

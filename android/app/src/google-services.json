@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "281434672237",
+    "project_id": "suchi-6007b",
+    "storage_bucket": "suchi-6007b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281434672237:android:ee14010140457909228364",
+        "android_client_info": {
+          "package_name": "com.suchi.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281434672237-279ehhhla35ckrg6spp0lu73q9b4kmm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suchi.app",
+            "certificate_hash": "b7514c66bf2919b7692e74c047c5d21f7031a3f9"
+          }
+        },
+        {
+          "client_id": "281434672237-b916l1gmo5mq8iqoqve4n9pkrc2quhid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEKgqgfkk9bmGHTDqr4J17hRlrxKz6Yj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281434672237-b916l1gmo5mq8iqoqve4n9pkrc2quhid.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "281434672237-m4cf21po31cctommjr29m312m9rbsike.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.suchi.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

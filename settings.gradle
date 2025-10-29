@@ -1,17 +1,6 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+// This file is intentionally minimal
+// The actual Capacitor Android project is in ./android/ directory
+// To build: cd android && ./gradlew assembleDebug
 
+// Root project name
 rootProject.name = "Suchi"
-include ':app'

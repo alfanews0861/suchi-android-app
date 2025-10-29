@@ -1,0 +1,31 @@
+{
+  "name": "suchi-android-app",
+  "version": "1.0.0",
+  "description": "ఈ యాప్ Suchi వెబ్‌సైట్‌ను (https://suchi-freshness-delivered-281434672237.us-west1.run.app/) ఆండ్రాయిడ్ WebView లో చూపిస్తుంది. ఇది పూర్తిగా నేటివ్ ఆండ్రాయిడ్ అప్లికేషన్ లాగా కనిపిస్తుంది.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfanews0861/suchi-android-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alfanews0861/suchi-android-app/issues"
+  },
+  "homepage": "https://github.com/alfanews0861/suchi-android-app#readme",
+  "dependencies": {
+    "@awesome-cordova-plugins/in-app-browser": "^8.1.0",
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/browser": "^7.0.2",
+    "@capacitor/cli": "^7.4.4",
+    "@capacitor/core": "^7.4.4",
+    "@codetrix-studio/capacitor-google-auth": "^3.4.0-rc.4",
+    "@ionic-native/in-app-browser": "^5.36.0",
+    "cordova-plugin-inappbrowser": "^6.0.0"
+  }
+}

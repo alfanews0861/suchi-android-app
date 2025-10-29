@@ -1,0 +1,17 @@
+{
+  "appId": "com.suchi.app",
+  "appName": "Suchi",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  },
+  "plugins": {
+    "GoogleAuth": {
+      "scopes": ["profile", "email"],
+      "serverClientId": "281434672237-b916l1gmo5mq8iqoqve4n9pkrc2quhid.apps.googleusercontent.com",
+      "forceCodeForRefreshToken": true
+    }
+  }
+}

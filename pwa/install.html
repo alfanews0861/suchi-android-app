@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF6B35">
+    <title>Suchi App ని Install చేయండి</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A25 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            width: 100px;
+            height: 100px;
+            background: #FF6B35;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .features {
+            margin: 30px 0;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .feature-icon {
+            font-size: 30px;
+            margin-right: 15px;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .feature-desc {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .install-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 10px;
+            border: 2px solid #FF6B35;
+        }
+        
+        .step {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background: #FF6B35;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .step-text {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .install-btn {
+            width: 100%;
+            background: #FF6B35;
+            color: white;
+            border: none;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .install-btn:hover {
+            background: #E55A25;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .install-btn:active {
+            transform: translateY(0);
+        }
+        
+        .install-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .open-btn {
+            width: 100%;
+            background: white;
+            color: #FF6B35;
+            border: 2px solid #FF6B35;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .open-btn:hover {
+            background: #FF6B35;
+            color: white;
+        }
+        
+        .status-message {
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .note {
+            background: #fff9e6;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #FF6B35;
+            margin: 20px 0;
+        }
+        
+        .note-title {
+            font-weight: bold;
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+        
+        .note-text {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">S</div>
+        </div>
+        
+        <h1>🛒 Suchi App</h1>
+        <div class="subtitle">తాజా కూరగాయలు మరియు పండ్లు - మీ ఇంటి వద్దకే<br>Fresh Groceries Delivered</div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✅</div>
+                <div class="feature-text">
+                    <div class="feature-title">గూగుల్ సైన్ ఇన్ పని చేస్తుంది</div>
+                    <div class="feature-desc">Google Sign-In works perfectly</div>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div class="feature-text">
+                    <div class="feature-title">ఫోన్ OTP పని చేస్తుంది</div>
+                    <div class="feature-desc">Phone OTP authentication works</div>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <div class="feature-text">
+                    <div class="feature-title">యాప్ లాగా పని చేస్తుంది</div>
+                    <div class="feature-desc">Works like a native app</div>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📴</div>
+                <div class="feature-text">
+                    <div class="feature-title">ఆఫ్‌లైన్ సపోర్ట్</div>
+                    <div class="feature-desc">Works offline with cached data</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="installSection" class="install-section">
+            <h3 style="color: #FF6B35; margin-bottom: 15px;">📲 ఇన్‌స్టాల్ చేయండి / Install</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-text">
+                    <strong>Chrome Browser</strong> లో ఈ పేజీ open చేయండి<br>
+                    Open this page in Chrome browser
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-text">
+                    క్రింది <strong>"Install App"</strong> button నొక్కండి<br>
+                    Click the "Install App" button below
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-text">
+                    <strong>"Add to Home Screen"</strong> confirm చేయండి<br>
+                    Confirm "Add to Home Screen"
+                </div>
+            </div>
+            
+            <button id="installBtn" class="install-btn" onclick="installPWA()">
+                📲 Install App / యాప్ ఇన్‌స్టాల్ చేయండి
+            </button>
+        </div>
+        
+        <div id="statusMessage" class="status-message hidden"></div>
+        
+        <button class="open-btn" onclick="openWebsite()">
+            🌐 బ్రౌజర్ లో Open చేయండి / Open in Browser
+        </button>
+        
+        <div class="note">
+            <div class="note-title">📝 గమనిక / Note:</div>
+            <div class="note-text">
+                • ఈ PWA (Progressive Web App) home screen లో add అవుతుంది<br>
+                • ఇది native app లాగే పని చేస్తుంది<br>
+                • Google Sign-In మరియు Phone OTP రెండూ పని చేస్తాయి<br>
+                • Play Store approval అవసరం లేదు<br>
+                <br>
+                • This PWA can be added to your home screen<br>
+                • Works exactly like a native app<br>
+                • Both Google Sign-In and Phone OTP work perfectly<br>
+                • No Play Store approval needed
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const WEBSITE_URL = 'https://suchi-freshness-delivered-281434672237.us-west1.run.app';
+        let deferredPrompt;
+        
+        // Check if already installed
+        if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+            document.getElementById('installSection').classList.add('hidden');
+            showStatus('✅ యాప్ ఇప్పటికే ఇన్‌స్టాల్ అయ్యింది / App is already installed', 'success');
+        }
+        
+        // Capture the install prompt event
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installBtn').disabled = false;
+        });
+        
+        // Install PWA function
+        async function installPWA() {
+            if (!deferredPrompt) {
+                showStatus('⚠️ Chrome browser లో open చేయండి / Please open in Chrome', 'warning');
+                return;
+            }
+            
+            try {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                
+                if (outcome === 'accepted') {
+                    showStatus('🎉 యాప్ successfully installed! Home screen చూడండి', 'success');
+                    setTimeout(() => {
+                        window.location.href = WEBSITE_URL;
+                    }, 2000);
+                } else {
+                    showStatus('❌ Installation cancelled', 'info');
+                }
+                
+                deferredPrompt = null;
+            } catch (error) {
+                console.error('Install error:', error);
+                showStatus('❌ Installation failed. Please try again.', 'warning');
+            }
+        }
+        
+        // Open website function
+        function openWebsite() {
+            window.location.href = WEBSITE_URL;
+        }
+        
+        // Show status message
+        function showStatus(message, type) {
+            const statusEl = document.getElementById('statusMessage');
+            statusEl.textContent = message;
+            statusEl.className = 'status-message ' + type;
+            statusEl.classList.remove('hidden');
+        }
+        
+        // Detect when PWA is installed
+        window.addEventListener('appinstalled', (evt) => {
+            showStatus('🎉 App installed successfully!', 'success');
+            document.getElementById('installSection').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
